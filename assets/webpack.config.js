@@ -29,6 +29,16 @@ module.exports = (env, options) => ({
         }
       },
       {
+        test: /\.elm$/,
+        exclude: [/elm-stuff/, /node_modules/],
+        use: {
+          loader: 'elm-webpack-loader',
+          options: {
+            debug: options.mode === "development"
+          }
+        }
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
       }
