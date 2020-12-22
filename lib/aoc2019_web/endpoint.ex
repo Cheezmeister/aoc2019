@@ -13,7 +13,8 @@ defmodule Aoc2019Web.Endpoint do
     at: "/",
     from: :aoc2019,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(css fonts images js elm 
+             favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

@@ -150,5 +150,5 @@ solve input =
   in
     (totalPart1Fuel |> String.fromInt, totalFuel |> String.fromInt, viz)
 
-day1 =
+day1 dummy =
   solve myInput

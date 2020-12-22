@@ -25,5 +25,6 @@ import "phoenix_html"
 import { Elm } from "../src/Main.elm";
 
 var app = Elm.Main.init({
+  flags: window.inputs,
   node: document.getElementById('elm-main')
 });

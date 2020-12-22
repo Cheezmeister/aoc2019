@@ -7,6 +7,11 @@
     <title>Aoc2019 · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <%# <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.styl") %1>"/> %>
+  <script>
+    window.inputs = [
+      <%= "bananas" %>
+    ]
+  </script>
   </head>
   <body>
     <header>
